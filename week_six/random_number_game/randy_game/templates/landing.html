@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome!</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <h1>Welcome to the Number Game!</h1>
+        <p>Input your name below to start the game.</p>
+
+        <form action="/start_game" method=post>
+            {% csrf_token %}
+            <input type="text" name='username'>
+            <input type="submit" value="Start Game">
+        </form>
+    </div>
+</body>
+
+</html>

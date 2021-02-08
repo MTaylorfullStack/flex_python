@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is My Fake Blog!</h1>
+    <a href="/name">Go to Name Page</a>
+    <h2>Try to Post Something</h2>
+
+    <form action="">
+        <input type="text">
+        <input type="submit">
+    </form>
+
+    <p>Django Templating Engine</p>
+    {{name}}
+    <ul>
+    {% for post in posts %}
+        <li>{{post}}</li>
+    {% endfor %}
+    </ul>   
+</body>
+</html>

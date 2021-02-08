@@ -1,0 +1,17 @@
+#wrapper{
+    width: 900px;
+    background-color: aqua;
+    margin: 0px auto;
+    font-family: sans-serif;
+    padding: 50px;
+}
+h1{
+    display: inline-block;
+    margin-right: 50px;
+}
+p{
+    display: inline-block;
+}
+form{
+    text-align: center;
+}
